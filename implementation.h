@@ -11,6 +11,8 @@
 
 
 
+
+
 void readNode_frm(QDomElement root, QVector<Firm>& vec_firm, Firm *buf_One);
 void readNode_prj(QDomElement root, QVector<Project>& vec_Project, Project *buf_One);
 void input_Firm(QVector<Firm>& vec_firm, const QDomDocument document);
