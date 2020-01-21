@@ -10,8 +10,6 @@
 //need to think about inheritance from class : public QObject
 //============================================================
 
-
-
 class BaseClass
 {
 protected:
@@ -22,8 +20,6 @@ public:
     virtual void Show_name() = 0;
     virtual ~BaseClass() = 0;
 };
-
-
 
 
 
