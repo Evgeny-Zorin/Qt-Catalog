@@ -2,6 +2,8 @@
 #define FIRMCLASS_H
 #include "BaseClass.h"
 
+
+
 class Firm  : public BaseClass
 {
 private:
