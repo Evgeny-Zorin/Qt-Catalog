@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTranslator>
+#include <QEvent>
 #include "BaseClass.h"
 #include "implementation.h"
 
@@ -24,8 +26,16 @@ private slots:
 
     void on_actionExit_triggered();
 
+    void on_actionEanglish_triggered();
+
+    void on_actionRussian_triggered();
+
 private:
     Ui::MainWindow *ui;
+    QTranslator* translator;
+    void changeTranslator(QString postfix);
+    void changeEvent(QEvent* event);    //перехватит событие смены языка для перевода иконок\меню
+    void retranslateUi();
 };
 
 
