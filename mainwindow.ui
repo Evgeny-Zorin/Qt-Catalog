@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Catalog 2019</string>
+   <string>Catalog</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QListView" name="listView">
@@ -89,8 +89,8 @@
     <property name="title">
      <string>Language</string>
     </property>
-    <addaction name="actionEanglish"/>
     <addaction name="actionRussian"/>
+    <addaction name="actionEnglish"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuoptions"/>
@@ -143,14 +143,14 @@
     <string>Version</string>
    </property>
   </action>
-  <action name="actionEanglish">
-   <property name="text">
-    <string>Eanglish</string>
-   </property>
-  </action>
   <action name="actionRussian">
    <property name="text">
     <string>Russian</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
    </property>
   </action>
  </widget>

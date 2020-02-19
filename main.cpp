@@ -16,8 +16,10 @@ int main(int argc, char *argv[])
 
     QApplication a(argc, argv);
 
+    //QTranslator trans;
+    //trans.load(QApplication::applicationName() + "_" + QLocale::system().name());       //load может искать не дословно
+    //a.installTranslator(&trans);
 
-   // QVector<Project> v_Project;
     QString nmf = "data.xml";
     QString name_main_tag = "Exponent";
 

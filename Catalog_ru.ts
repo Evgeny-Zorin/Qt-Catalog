@@ -6,12 +6,12 @@
     <message>
         <location filename="mainwindow.ui" line="14"/>
         <source>Catalog 2019</source>
-        <translation type="unfinished"></translation>
+        <translation>Каталог-2019</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="37"/>
         <source>Button</source>
-        <translation type="unfinished"></translation>
+        <translation>Кнопка</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="62"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="mainwindow.ui" line="108"/>
         <source>Save to PDF</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить в PDF</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="111"/>
@@ -56,7 +56,7 @@
     <message>
         <location filename="mainwindow.ui" line="116"/>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Выход</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="119"/>
@@ -91,12 +91,12 @@
     <message>
         <location filename="mainwindow.ui" line="148"/>
         <source>Eanglish</source>
-        <translation type="unfinished"></translation>
+        <translation>Английский</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="153"/>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>Русский</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="63"/>

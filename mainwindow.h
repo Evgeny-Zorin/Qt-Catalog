@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QTranslator>
-#include <QEvent>
 #include "BaseClass.h"
 #include "implementation.h"
 
@@ -26,9 +25,9 @@ private slots:
 
     void on_actionExit_triggered();
 
-    void on_actionEanglish_triggered();
-
     void on_actionRussian_triggered();
+
+    void on_actionEnglish_triggered();
 
 private:
     Ui::MainWindow *ui;

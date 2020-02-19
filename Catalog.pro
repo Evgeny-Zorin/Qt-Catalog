@@ -40,7 +40,7 @@ HEADERS += \
 FORMS += \
         mainwindow.ui
 TRANSLATIONS += Catalog_ru.ts
-                Catalog_eu.ts
+               #Catalog_eu.ts
 
 
 

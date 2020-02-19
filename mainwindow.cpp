@@ -3,6 +3,7 @@
 #include "implementation.h"
 //#include "BaseClass.h"
 #include <QMessageBox>
+#include <QEvent>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -52,25 +53,30 @@ void MainWindow::changeEvent(QEvent *event)
 {
     if(event->type() == QEvent::LanguageChange) //проверяем тип события
     {
-        retranslateUi();
+        //retranslateUi();
+        setWindowTitle(tr("Catalog-2020"));
+        ui->menuLanguage->setTitle(tr("Language"));
+        ui->actionEnglish->setText(tr("English"));
     }
-    //else
+    else
+    {
     QMainWindow::changeEvent(event);
+    }
 }
 
 void MainWindow::retranslateUi()
 {
-    setWindowTitle(tr("Current Langage"));
+    //setWindowTitle(tr("Current Langage"));
     //ui->push
     //setText(tr("Hello Ev!"));
-}
-
-void MainWindow::on_actionEanglish_triggered()
-{
-    changeTranslator("en");
 }
 
 void MainWindow::on_actionRussian_triggered()
 {
     changeTranslator("ru");
+}
+
+void MainWindow::on_actionEnglish_triggered()
+{
+    changeTranslator("en");
 }
