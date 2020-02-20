@@ -6,8 +6,8 @@
 class Project :public BaseClass
 {
 private:
-    static int P_idGenerator;
-    int P_id;
+    static int P_idGenerator;   //(remove it)
+    int P_id;                   //(remove it)
 
     static QStringList Project_list_to_case;
 
@@ -53,7 +53,7 @@ public:
         proj_contact_position(_proj_contact_position),proj_contact_phone(_proj_contact_phone),
         proj_contact_email(_proj_contact_email),proj_present(_proj_present),proj_additional(_proj_additional)
     {
-        // тут бы надо организовать проверку, но кому она нужна??
+        // тут бы надо организовать проверку
         assert(_proj_id != "");
         P_id = P_idGenerator++;
     }
@@ -115,7 +115,7 @@ public: //виртуальные
         static void add_buffer(int for_case, Project *buf_One, const QString& str);
 //        void clear_date(){
 //            qDebug()<<"clear_date : Начало: "<<endl;
-//            *this = Firm();   //ТУТ СТОИТ ПОДУМАТЬ НАД РЕАЛИЗАЦИЕЙ
+//            *this = Firm();   //
 //            qDebug()<<"clear_date : Конец!"<<endl;}
 
 
@@ -123,8 +123,6 @@ public: //виртуальные
 //public: //переопределённые методы
 //        static int give_number_to_case(const QString& str);
 //        virtual void Show_name(); //определена в cpp
-
-
 
 
 };

@@ -1,24 +1,14 @@
 #include "mainwindow.h"
 #include "implementation.h"
-//#include "BaseClass.h"
 #include "xmlparser.h"
 #include <QApplication>
 #include <QVector>
 
-//#include <windows.h>    //<<<<  !!!!!temporary solution!!!!!   >>>
-
 
 int main(int argc, char *argv[])
 {
-  //  SetConsoleCP(1251);
-  //  SetConsoleOutputCP(1251);
- //   setlocale(LC_ALL,"russian");
 
     QApplication a(argc, argv);
-
-    //QTranslator trans;
-    //trans.load(QApplication::applicationName() + "_" + QLocale::system().name());       //load может искать не дословно
-    //a.installTranslator(&trans);
 
     QString nmf = "data.xml";
     QString name_main_tag = "Exponent";

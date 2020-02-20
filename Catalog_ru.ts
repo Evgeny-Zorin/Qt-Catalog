@@ -5,7 +5,8 @@
     <name>MainWindow</name>
     <message>
         <location filename="mainwindow.ui" line="14"/>
-        <source>Catalog 2019</source>
+        <source>Catalog</source>
+        <oldsource>Catalog 2019</oldsource>
         <translation>Каталог-2019</translation>
     </message>
     <message>
@@ -16,32 +17,33 @@
     <message>
         <location filename="mainwindow.ui" line="62"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="73"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="78"/>
         <source>Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="84"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="90"/>
+        <location filename="mainwindow.cpp" line="58"/>
         <source>Language</source>
-        <translation type="unfinished"></translation>
+        <translation>Язык</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="103"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Новый</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="108"/>
@@ -51,7 +53,7 @@
     <message>
         <location filename="mainwindow.ui" line="111"/>
         <source>Ctrl+S</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+S</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="116"/>
@@ -61,47 +63,58 @@
     <message>
         <location filename="mainwindow.ui" line="119"/>
         <source>Alt+E</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+E</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="124"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="127"/>
         <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="135"/>
         <source>Hide menuBar</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть меню</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="138"/>
         <source>Alt+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="143"/>
         <source>Version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mainwindow.ui" line="148"/>
-        <source>Eanglish</source>
-        <translation>Английский</translation>
+        <translation>Версия</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="153"/>
+        <location filename="mainwindow.cpp" line="59"/>
+        <source>English</source>
+        <translation>Английский</translation>
+    </message>
+    <message>
+        <source>Eanglish</source>
+        <translation type="vanished">Английский</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="148"/>
+        <location filename="mainwindow.cpp" line="60"/>
         <source>Russian</source>
         <translation>Русский</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="63"/>
-        <source>Current Langage</source>
-        <translation type="unfinished"></translation>
+        <location filename="mainwindow.cpp" line="57"/>
+        <source>Catalog-2020</source>
+        <translation>Каталог-2020</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="61"/>
+        <source>Button11</source>
+        <translation>Кнопка11</translation>
     </message>
 </context>
 </TS>

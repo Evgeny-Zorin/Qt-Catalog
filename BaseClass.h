@@ -3,8 +3,6 @@
 #include <QString>
 #include <QDebug>
 #include <iostream> //убрать общее подключение
-// this new test
-//or read
 //std::vector<std::shared_ptr<BaseClass> >
 
 //============================================================

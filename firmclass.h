@@ -7,8 +7,8 @@
 class Firm  : public BaseClass
 {
 private:
-    static int F_idGenerator;       //общий счетчик объектов класса
-    int F_id;                       //уникальный номер класса
+    static int F_idGenerator;       //общий счетчик объектов класса (remove it)
+    int F_id;                       //уникальный номер класса (remove it)
 
     static QStringList Firm_list_to_case;
 
@@ -57,7 +57,7 @@ private:                       // Данные по компании
             firm_additional(_firm_additional),firm_coll_type(_firm_coll_type),firm_partner_tasks(_firm_partner_tasks),
             firm_contact_name(_contact_name),firm_contact_position(_contact_position),firm_contact_email(_contact_email)
         {
-            // тут бы надо организовать проверку, но кому она нужна??
+            // тут бы надо организовать проверку
             assert(_logo != "");
             F_id = F_idGenerator++;
            // qDebug()<<"Сработал конструктор Firm"<<endl;
@@ -109,9 +109,6 @@ public:
         void set_name(const QString& atr){firm_name = atr;}
         void set_firm_year(const QString& atr){firm_year = atr;}
 
-
-
-
         friend  QDebug operator<<(QDebug out, const Firm& frm);
         friend  std::ostream& operator<<(std::ostream& out, const Firm& frm);
         int getID_Firm() const { return F_id; }
@@ -126,7 +123,6 @@ public:
             *this = Firm();   //ТУТ СТОИТ ПОДУМАТЬ НАД РЕАЛИЗАЦИЕЙ
            // qDebug()<<"clear_date : Конец!"<<endl;
         }
-
 
 
 public: //переопределённые методы
