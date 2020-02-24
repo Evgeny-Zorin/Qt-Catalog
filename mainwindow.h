@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTranslator>
+#include <QSortFilterProxyModel>
 #include "BaseClass.h"
 #include "implementation.h"
 

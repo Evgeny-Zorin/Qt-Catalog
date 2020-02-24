@@ -6,22 +6,74 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>837</width>
-    <height>622</height>
+    <width>948</width>
+    <height>803</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Catalog</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QListView" name="listView">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>60</y>
-      <width>511</width>
-      <height>481</height>
+      <x>10</x>
+      <y>190</y>
+      <width>381</width>
+      <height>451</height>
      </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Firm_tab">
+     <attribute name="title">
+      <string>Firm</string>
+     </attribute>
+     <widget class="QListView" name="FirmlistView">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>361</width>
+        <height>401</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Project_tab">
+     <attribute name="title">
+      <string>Project</string>
+     </attribute>
+     <widget class="QListView" name="ProjectlistView">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>361</width>
+        <height>401</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="h_1_ru">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>351</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/base_img/base_img/h_1_ru.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
@@ -40,7 +92,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>837</width>
+     <width>948</width>
      <height>21</height>
     </rect>
    </property>
@@ -142,6 +194,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

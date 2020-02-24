@@ -1,15 +1,27 @@
+#include <QMessageBox>
+#include <QEvent>
+#include <QPixmap>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "implementation.h"
-//#include "BaseClass.h"
-#include <QMessageBox>
-#include <QEvent>
+#include "firmlistmodel.h"
+#include "xmlparser.h"
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QPixmap pix(":/base_img/base_img/h_1_ru.jpg");
+    int w = ui->h_1_ru->width();
+    int h = ui->h_1_ru->height();
+    ui->h_1_ru->setPixmap(pix.scaled(w, h,Qt::KeepAspectRatio));
+
+    //FirmListModel* model = new FirmListModel(this);
+    //model->model_firm = XmlParser();
+
 
     // Сделаем первоначальную инициализацию перевода для окна прилоежния
     //QTranslator trans;

@@ -1,10 +1,10 @@
 #ifndef XMLPARSER_H
 #define XMLPARSER_H
 #include <QtXml>
-#include"BaseClass.h"
+#include "firmclass.h"
 
+//QVector<Firm>* XmlParser();
 bool XmlParser();
-
 
 
 

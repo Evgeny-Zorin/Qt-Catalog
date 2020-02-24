@@ -21,6 +21,7 @@ CONFIG += c++11
 SOURCES += \
     BaseClass.cpp \
     firmclass.cpp \
+    firmlistmodel.cpp \
         main.cpp \
         mainwindow.cpp \
     projectclass.cpp \
@@ -31,6 +32,7 @@ SOURCES += \
 HEADERS += \
     BaseClass.h \
     firmclass.h \
+    firmlistmodel.h \
         mainwindow.h \
         implementation.h \
     projectclass.h \
@@ -51,3 +53,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     Catalog_ru.ts
+
+RESOURCES += \
+    resource.qrc

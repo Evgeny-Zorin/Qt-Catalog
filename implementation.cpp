@@ -72,7 +72,7 @@ void input_Firm(QVector<Firm>& vec_firm,const QDomDocument document)
     //get the root element
     QDomElement root = document.firstChildElement();
     //List the books
-    qDebug()<<"Started "<<endl;
+    //qDebug()<<"Started "<<endl;
 
     Firm *buf_One = new Firm;
        buf_One->clear_date();
@@ -98,7 +98,6 @@ void input_Firm(QVector<Firm>& vec_firm,const QDomDocument document)
             //for(const auto &i: vec_firm)
                 //  qDebug() << i<<endl;
 
-
 //            return true;
 }
 
@@ -107,7 +106,7 @@ void input_Project(QVector<Project>& vec_Project,const QDomDocument document)
     //get the root element
     QDomElement root = document.firstChildElement();
     //List the books
-    qDebug()<<"Started "<<endl;
+    //qDebug()<<"Started "<<endl;
 
     Project *buf_One = new Project;
 //       buf_One->clear_date();

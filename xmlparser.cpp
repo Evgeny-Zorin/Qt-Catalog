@@ -2,7 +2,7 @@
 //#include "BaseClass.h"
 #include "implementation.h"
 
-
+//QVector<Firm>* XmlParser();
 bool XmlParser()
 {
     QDomDocument document_firm,document_prj;
@@ -15,19 +15,21 @@ bool XmlParser()
     if(!file_data.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug()<<"Failed to open file_data!"<<endl;
-        return -1;
+        //return nullptr;
+        return false;
     }
     else {
         if(!document_firm.setContent((&file_data)))
         {
             qDebug()<<"Failed to load document!"<<endl;
-            return -1;
+            //return nullptr;
+            return false;
         }
         file_data.close();
     }
     input_Firm(v_Firm, document_firm);
 
-    qDebug()<<"Printed 2 vec_firm: ";
+    //qDebug()<<"Printed 2 vec_firm: ";
           //  for(const auto &i: v_Firm)
            //       qDebug() << i<<endl;
 
@@ -35,22 +37,25 @@ bool XmlParser()
     if(!file_projects.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug()<<"Failed to open file_projects!"<<endl;
-        return -1;
+        //return nullptr;
+        return false;
     }
     else {
         if(!document_prj.setContent((&file_projects)))
         {
             qDebug()<<"Failed to load document!"<<endl;
-            return -1;
+            //return nullptr;
+            return false;
         }
         file_projects.close();
     }
 
     input_Project(v_Prj,document_prj);
-    qDebug()<<"Printed 2 v_Prj: ";
+    //qDebug()<<"Printed 2 v_Prj: ";
          //   for(const auto &i: v_Prj)
           //        qDebug() << i<<endl;
 
+    //return v_Firm;
     return true;
 }
 
